@@ -12,8 +12,8 @@ def main():
     # Prompt the user to set the savings balance, interest rate, and months for the savings account.
     
     print()
-    savings_balance = input("Enter the savings balance:")
-    savings_interest = input("Enter the interest rate: ")
+    savings_balance = float(input("Enter the savings balance:"))
+    savings_interest = float(input("Enter the interest rate: "))
     savings_maturity = int(input("Enter the length of months for the savings account: "))
 
     # Call the create_savings_account function and pass the variables from the user.
@@ -23,14 +23,14 @@ def main():
     
     print()
     print("SAVINGS ACCOUNT INFORMATION")
-    print(f"Interest earned: {interest_earned:,.2f}")
-    print(f"Savings account balance: {updated_savings_balance:,.2f}")
+    print(f"Interest earned: ${interest_earned:,.2f}")
+    print(f"Savings account balance: ${updated_savings_balance:,.2f}")
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     
     print()
-    cd_balance = input("Enter the CD balance:")
-    cd_interest = input("Enter the interest rate: ")
+    cd_balance = float(input("Enter the CD balance:"))
+    cd_interest = float(input("Enter the interest rate: "))
     cd_maturity = int(input("Enter the length of the CD in months: "))
 
     # Call the create_cd_account function and pass the variables from the user.
@@ -41,7 +41,7 @@ def main():
     print()
     print("CD ACCOUNT INFORMATION")
     print(f"Interest earned: ${interest_earned:,.2f}")
-    print(f"Savings account balance: ${updated_cd_balance:,.2f}")
+    print(f"CD account balance: ${updated_cd_balance:,.2f}")
     print()    
 
 if __name__ == "__main__":
